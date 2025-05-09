@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Pills from "./components/Pills";
 import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
