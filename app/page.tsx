@@ -2,6 +2,7 @@ import Pills from "./components/Pills";
 import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
 import gamey from "./assets/img/gamey.jpeg";
+import ProjectImageCard from "./components/ProjectImageCard";
 
 export default function Home() {
   return (
@@ -56,8 +57,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex items-center gap-4 pl-28 my-7">
-            <ProjectCard images={gamey} />
+          <div className="flex items-center gap-8 pl-28 my-7">
+            <ProjectCard />
+            <ProjectImageCard image={gamey} />
           </div>
         </div>
       </div>

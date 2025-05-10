@@ -1,13 +1,8 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { motion } from "motion/react";
 
-interface Props {
-  images: StaticImageData;
-}
-
-const ProjectCard = ({ images }: Props) => {
+const ProjectCard = () => {
   return (
     <motion.div
       whileHover="hover"
