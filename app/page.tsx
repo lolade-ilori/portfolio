@@ -4,8 +4,6 @@ import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
 import gamey from "./assets/img/gamey.jpeg";
 import ProjectImageCard from "./components/ProjectImageCard";
-import { useState } from "react";
-import Loading from "./loading";
 
 export default function Home() {
   return (
