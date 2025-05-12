@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import ClientWrapper from "./ClientWrapper";
 
 const faroLocalFont = localFont({
   src: "./fonts/Faro-DisplayLucky.woff",
@@ -32,11 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${faroLocalFont.variable} ${regularFaro.variable} ${lightFaro.variable} min-h-screen relative antialiased`}
+        className={`${faroLocalFont.variable} ${regularFaro.variable} ${lightFaro.variable} min-h-screen relative antialiased bg-fill bg-[url('./assets/img/bg-grid.png')] bg-fixed bg-no-repeat bg-blend-overlay`}
       >
-        <NavBar />
-        <main className="min-h-[calc(100vh_-_130px)]">{children}</main>
-        <Footer />
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

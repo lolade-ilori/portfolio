@@ -1,8 +1,11 @@
+"use client";
 import Pills from "./components/Pills";
 import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
 import gamey from "./assets/img/gamey.jpeg";
 import ProjectImageCard from "./components/ProjectImageCard";
+import { useState } from "react";
+import Loading from "./loading";
 
 export default function Home() {
   return (
@@ -47,7 +50,7 @@ export default function Home() {
       </div>
 
       <div className="w-full pt-10">
-        <div className="font-faro-regular flex pb-10 justify-end">
+        <div className="font-faro-regular flex justify-end px-15">
           <Link
             href={""}
             className="underline underline-offset-2 uppercase text-sm"
@@ -57,7 +60,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex items-center gap-8 pl-28 my-7">
+          <div className="flex items-center pl-10 gap-4 my-7">
+            <ProjectCard />
+            <ProjectImageCard image={gamey} />
             <ProjectCard />
             <ProjectImageCard image={gamey} />
           </div>

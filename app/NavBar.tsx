@@ -4,7 +4,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <nav
-      className={`font-faro-local flex items-start gap-53 uppercase font-black h-[60px] border border-amber-200`}
+      className={`font-faro-local flex items-start gap-53 uppercase p-6 px-20 font-black`}
     >
       <div>
         <Link href={"/"}>lolade ilori.</Link>
