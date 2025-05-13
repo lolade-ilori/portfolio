@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       <div className="w-full pt-10">
-        <div className="font-faro-regular flex justify-end px-15">
+        <div className="font-faro-local flex justify-end px-15">
           <Link
             href={"/projects"}
             className="underline underline-offset-2 uppercase text-sm"

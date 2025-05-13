@@ -9,7 +9,7 @@ export const FaroLight = localFont({
 
 export const FaroRegular = localFont({ 
     src: '../public/fonts/Faro-RegularLucky.woff', 
-    weight: '400', 
+    weight: '500', 
     variable: '--font-faro-regular',
     display: 'swap'
 })
