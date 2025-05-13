@@ -1,9 +1,9 @@
 "use client";
-import Pills from "./components/Pills";
+import Pills from "../components/Pills";
 import Link from "next/link";
-import ProjectCard from "./components/ProjectCard";
-import gamey from "./assets/img/gamey.jpeg";
-import ProjectImageCard from "./components/ProjectImageCard";
+import ProjectCard from "../components/ProjectCard";
+import gamey from "../assets/img/gamey.jpeg";
+import ProjectImageCard from "../components/ProjectImageCard";
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
       <div className="w-full pt-10">
         <div className="font-faro-regular flex justify-end px-15">
           <Link
-            href={""}
+            href={"/projects"}
             className="underline underline-offset-2 uppercase text-sm"
           >
             view full project archive

@@ -1,8 +1,8 @@
 "use client";
 import React, { ReactNode, useState } from "react";
 import SplashScreen from "./components/SplashScreen";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import { usePathname } from "next/navigation";
 
 export default function ClientWrapper({ children }: { children: ReactNode }) {
