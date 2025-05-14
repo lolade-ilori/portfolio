@@ -10,7 +10,8 @@
   --color-foreground: var(--foreground);
   --font-faro-local: var(--font-faro-local);
   --font-faro-regular: var(--font-faro-regular);
-  --font-faro-light:var(--font-faro-light);
+  --font-faro-light: var(--font-faro-light);
+  --font-faro-semibold: var(--font-faro-semibold)
 }
 
 @media (prefers-color-scheme: dark) {
