@@ -1,7 +1,12 @@
 import React from "react";
 import "../globals.css";
 import { Metadata } from "next";
-import { FaroBold, FaroLight, FaroRegular } from "../../utils/fonts";
+import {
+  FaroBold,
+  FaroLight,
+  FaroRegular,
+  FaroSemiBold,
+} from "../../utils/fonts";
 import Sidebar from "./Sidebar";
 
 export const metadata: Metadata = {
@@ -17,7 +22,7 @@ export default function PersonalLayout({
   return (
     <html lang="en">
       <body
-        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} min-h-screen relative antialiased bg-fill bg-[url('./assets/img/bg-grid.png')] bg-fixed bg-no-repeat bg-blend-overlay flex`}
+        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-fill bg-[url('./assets/img/bg-grid.png')] bg-fixed bg-no-repeat bg-blend-overlay flex`}
       >
         <Sidebar />
         <main>{children}</main>
