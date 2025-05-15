@@ -7,14 +7,16 @@ import { usePathname } from "next/navigation";
 
 export default function ClientWrapper({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const [showSplash, setShowSplash] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const hasSeen = localStorage.getItem("seenSplash");
+    const hasSeen = sessionStorage.getItem("seenSplash");
 
     if (!hasSeen) {
       setShowSplash(true);
-      localStorage.setItem("seenSplash", "1");
+      sessionStorage.setItem("seenSplash", "1");
+    } else {
+      setShowSplash(false);
     }
   }, []);
 
