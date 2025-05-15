@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const AboutHeader = () => {
+const AboutHeader = ({ pathname }: { pathname: string }) => {
   return (
     <header className="">
       <div className="flex justify-between items-center">
@@ -12,7 +12,9 @@ const AboutHeader = () => {
           close
         </Link>
 
-        <h3 className="uppercase text-md font-faro-local">contact</h3>
+        <h3 className="uppercase text-md font-faro-local">
+          {pathname === "/about" ? "about" : "contact"}
+        </h3>
       </div>
     </header>
   );

@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import AboutHeader from "../AboutHeader";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const ContactPage = () => {
+  const pathname = usePathname();
+
   return (
     <div className=" h-screen w-[calc(100vw_-_240px)] ml-60 py-8 px-16">
-      <AboutHeader />
+      <AboutHeader pathname={pathname} />
       <section className="flex justify-center items-center h-full">
         <div className="flex flex-col gap-10 justify-center items-center">
           <h3 className="text-[#545D69] text-5xl font-faro-semibold ">
