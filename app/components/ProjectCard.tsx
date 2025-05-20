@@ -30,7 +30,6 @@ const ProjectCard = () => {
 const Background = () => {
   return (
     <motion.svg
-      // width="320"
       height="384"
       viewBox="0 0 320 384"
       fill="none"

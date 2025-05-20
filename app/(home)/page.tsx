@@ -1,9 +1,6 @@
 "use client";
 import Pills from "../components/Pills";
 import Link from "next/link";
-import ProjectCard from "../components/ProjectCard";
-import gamey from "../assets/img/gamey.jpeg";
-import ProjectImageCard from "../components/ProjectImageCard";
 import JobsCarousel from "../components/JobsCarousel";
 
 export default function Home() {
