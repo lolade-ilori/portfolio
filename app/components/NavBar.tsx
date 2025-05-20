@@ -4,7 +4,7 @@ import React from "react";
 const NavBar = ({ pathname }: { pathname: string }) => {
   return (
     <nav
-      className={`font-faro-local flex items-start gap-53 uppercase p-6 px-20 font-black`}
+      className={`font-faro-local flex items-start justify-between uppercase p-6 px-20 font-black`}
     >
       <div>
         {pathname === "/" ? (

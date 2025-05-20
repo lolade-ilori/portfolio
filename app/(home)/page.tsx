@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProjectCard from "../components/ProjectCard";
 import gamey from "../assets/img/gamey.jpeg";
 import ProjectImageCard from "../components/ProjectImageCard";
+import JobsCarousel from "../components/JobsCarousel";
 
 export default function Home() {
   return (
@@ -57,14 +58,16 @@ export default function Home() {
           </Link>
         </div>
 
-        <div>
+        {/* <div>
           <div className="flex items-center pl-10 gap-4 my-7">
             <ProjectCard />
             <ProjectImageCard image={gamey} />
             <ProjectCard />
             <ProjectImageCard image={gamey} />
           </div>
-        </div>
+        </div> */}
+
+        <JobsCarousel />
       </div>
     </main>
   );
