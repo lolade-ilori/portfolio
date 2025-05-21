@@ -28,11 +28,19 @@ const Sidebar = () => {
             <h2 className="uppercase text-base text-[#545D69] ">find me</h2>
 
             <div className="flex items-center gap-3">
-              <Link href={""}>
+              <Link
+                href={"https://www.linkedin.com/in/lolade-ilori/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src={linkedIn} alt="LinkedIn social" width={20} />
               </Link>
 
-              <Link href={""}>
+              <Link
+                href={"https://github.com/lolade-ilori"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src={github} alt="Github social" width={20} />
               </Link>
             </div>

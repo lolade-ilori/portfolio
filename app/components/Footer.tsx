@@ -13,7 +13,11 @@ const Footer = () => {
         </h2>
 
         <div className="flex items-center gap-3">
-          <Link href={""}>
+          <Link
+            href={"https://www.linkedin.com/in/lolade-ilori/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src={linkedIn}
               alt="LinkedIn social"
@@ -21,7 +25,11 @@ const Footer = () => {
             />
           </Link>
 
-          <Link href={""}>
+          <Link
+            href={"https://github.com/lolade-ilori"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src={github}
               alt="Github social"

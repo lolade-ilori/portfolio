@@ -21,11 +21,29 @@ const ContactPage = () => {
           </h1>
 
           <div className="uppercase underline underline-offset-2 text-sm md:text-xl flex justify-between items-center w-full font-faro-regular">
-            <Link href={""}>linkedin</Link>
+            <Link
+              href={"https://www.linkedin.com/in/lolade-ilori/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+            </Link>
 
-            <Link href={""}>github</Link>
+            <Link
+              href={"https://github.com/lolade-ilori"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </Link>
 
-            <Link href={""}>read.cv</Link>
+            <Link
+              href={"/resume.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              read.cv
+            </Link>
           </div>
         </div>
       </section>
