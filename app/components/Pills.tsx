@@ -19,9 +19,11 @@ const Pills = ({
 }: Props) => {
   return (
     <div
-      className={`bg-[#0069FB] rounded-md py-2 px-5 flex items-center justify-center absolute ${zIndex} ${leftPosition} ${rightPosition} ${topPosition} ${bottomPosition} `}
+      className={`bg-[#0069FB] rounded-sm md:rounded-md py-1 px-3 md:py-2 md:px-5 flex items-center justify-center absolute ${zIndex} ${leftPosition} ${rightPosition} ${topPosition} ${bottomPosition} `}
     >
-      <p className="captalize font-faro-regular font-light">{pillName}</p>
+      <p className="captalize font-faro-regular text-xs md:text-base">
+        {pillName}
+      </p>
     </div>
   );
 };

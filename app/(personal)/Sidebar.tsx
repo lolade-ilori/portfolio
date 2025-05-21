@@ -7,7 +7,7 @@ import github from "../assets/img/ri_github-fill.png";
 
 const Sidebar = () => {
   return (
-    <nav className="fixed z-11 left-0 top-0 min-h-screen w-60">
+    <nav className="hidden md:block fixed z-11 left-0 top-0 min-h-screen w-60">
       <div>
         <Image
           src={bg}
@@ -25,7 +25,7 @@ const Sidebar = () => {
 
         <div className="fixed left-0 bottom-0 z-20 font-faro-local pb-20 px-9">
           <div className="flex items-center gap-3">
-            <h2 className="uppercase text-md text-[#545D69] ">find me</h2>
+            <h2 className="uppercase text-base text-[#545D69] ">find me</h2>
 
             <div className="flex items-center gap-3">
               <Link href={""}>

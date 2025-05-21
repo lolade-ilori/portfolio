@@ -4,9 +4,9 @@ import React from "react";
 const NavBar = ({ pathname }: { pathname: string }) => {
   return (
     <nav
-      className={`font-faro-local flex items-start justify-between uppercase p-6 px-20 font-black`}
+      className={`font-faro-local flex items-start justify-between uppercase p-2 px-5 md:p-6 md:px-20 font-black`}
     >
-      <div>
+      <div className="text-sm md:text-base">
         {pathname === "/" ? (
           <>
             <Link href={"/"}>lolade ilori.</Link>
@@ -20,7 +20,7 @@ const NavBar = ({ pathname }: { pathname: string }) => {
       </div>
 
       {pathname === "/" && (
-        <ul className="flex items-center gap-10">
+        <ul className="flex items-center gap-3 md:gap-10 text-sm md:text-base">
           <li>
             <Link href={"/about"}>about</Link>
           </li>

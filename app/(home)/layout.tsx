@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-fill bg-[url('./assets/img/Background.png')] bg-fixed bg-no-repeat bg-blend-overlay`}
+        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-cover bg-center bg-[url('./assets/img/Background.png')] bg-fixed bg-no-repeat bg-blend-overlay`}
       >
         <ClientWrapper>{children}</ClientWrapper>
       </body>

@@ -11,30 +11,30 @@ const AboutPage = () => {
   const pathname = usePathname();
 
   return (
-    <div className=" h-screen w-[calc(100vw_-_240px)] ml-60 py-8 px-16">
+    <div className=" h-screen px-5 py-2 md:ml-60 md:py-8 md:px-16">
       <AboutHeader pathname={pathname} />
 
-      <section className="grid gap-10 grid-cols-8 min-h-full mt-15">
+      <section className="grid gap-5 md:gap-10 lg:grid-cols-8 min-h-full mt-8 md:mt-15">
         {/* LEFT */}
-        <div className="col-span-4 pr-15">
+        <div className="md:col-span-4 md:pr-15">
           <div>
-            <h1 className="text-7xl font-faro-local uppercase">
+            <h1 className="text-5xl md:text-7xl font-faro-local uppercase">
               lolade <br /> ilori{" "}
             </h1>
-            <p className="mt-4 text-[#545D69] text-xl font-faro-semibold">
+            <p className="mt-4 text-[#545D69] text-sm md:text-xl font-faro-semibold">
               I build accessible, pixel-perfect digital experiences for the web.
             </p>
           </div>
         </div>
 
         {/* RIGHT */}
-        <div className="col-span-4">
+        <div className="md:col-span-4">
           <h4 className="text-[#545D69] text-sm uppercase font-faro-local">
             bio
           </h4>
 
           {/* bio content */}
-          <section className="text-md font-faro-regular flex flex-col gap-6 mt-5">
+          <section className="text-sm md:text-base font-faro-regular flex flex-col gap-6 mt-3 md:mt-5">
             <p>
               I’m a passionate software engineer dedicated to creating
               impactful, innovative solutions through technology. With a strong
@@ -57,12 +57,12 @@ const AboutPage = () => {
           </section>
 
           {/* experience section */}
-          <section className="mt-15">
+          <section className="mt-10 md:mt-15">
             <h4 className="text-[#545D69] text-sm uppercase font-faro-local">
               experience
             </h4>
 
-            <div className="flex flex-col gap-5 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5 mb-6">
               <ExtraInfoBox
                 institution="Storipod"
                 title="Frontend Engineer"
@@ -116,17 +116,21 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-8 gap-10 py-20">
+      <section className="grid lg:grid-cols-8 gap-4 md:gap-10 py-14 md:py-20">
         <div className="col-span-4">
-          <h1 className="flex items-center gap-4 text-9xl font-faro-local">
+          <h1 className="flex items-center gap-2 md:gap-4 text-4xl md:text-9xl font-faro-local">
             <span>
-              <Image src={copyright} alt="copyright" />
+              <Image
+                src={copyright}
+                alt="copyright"
+                className="w-10 md:w-[100px]"
+              />
             </span>{" "}
             2025
           </h1>
         </div>
 
-        <div className="uppercase underline underline-offset-2 text-md flex gap-5 items-center w-full font-faro-regular col-span-4">
+        <div className="uppercase underline underline-offset-2 text-sm md:text-base flex gap-5 items-center w-full font-faro-regular col-span-4">
           <Link href={""}>linkedin</Link>
 
           <Link href={""}>github</Link>
