@@ -79,7 +79,7 @@ export const projects: ProjectsInfo[] = [
         image: '',
         weblink: 'https://roadlers.com/',
         description: '',
-        stackUsed: ['React', 'Typescript', 'Styled Components', 'Redux'],
+        stackUsed: ['React', 'Typescript', 'Styled Components', 'Redux', 'Google API'],
         year: '2023'
     },
     {

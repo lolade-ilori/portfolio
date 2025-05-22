@@ -1,8 +1,11 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import gamey from "../../assets/img/gamey.jpeg";
 import Image from "next/image";
 import { ProjectsInfo } from "../../../data/projectHistory";
+import { MdArrowOutward } from "react-icons/md";
+import { motion } from "motion/react";
 
 const ProjectDescriptionCard = ({
   name,
@@ -13,10 +16,10 @@ const ProjectDescriptionCard = ({
   year,
 }: ProjectsInfo) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-0 items-center">
+    <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-8 lg:gap-0 items-center">
       <div className="md:col-span-2">
         <Image
-          src={image}
+          src={gamey}
           alt="gamey"
           className="h-30 md:h-20 rounded-2xl w-40 border border-green-200 object-cover object-center md:object-cover "
         />
@@ -37,7 +40,7 @@ const ProjectDescriptionCard = ({
           <div className="flex mt-2 items-center gap-3 flex-wrap ">
             {stackUsed.map((item, id) => (
               <div
-                className="w-fit rounded-4xl py-1 px-3 flex justify-center bg-gray-200/40 text-gray-800 items-center font-faro-semibold text-sm"
+                className="w-fit rounded-4xl py-1 px-3 flex justify-center bg-[#0069FB]/30  text-[#0069FB] items-center font-faro-semibold text-sm"
                 key={id}
               >
                 {item}
@@ -46,16 +49,25 @@ const ProjectDescriptionCard = ({
           </div>
         </div>
 
-        <div className="text-sm md:text-base mt-2">
+        <motion.div
+          className="text-sm md:text-base mt-3 w-fit"
+          whileHover="hover"
+        >
           <Link
             href={weblink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0069FB] text-sm font-faro-local underline underline-offset-2 uppercase"
+            className="flex gap-1 items-center text-[#7C8A9C] text-sm font-faro-local underline underline-offset-2 uppercase transition duration-300 ease-in-out hover:text-[#0069FB]"
           >
             {description === "github" ? "github" : "visit website"}
+            <motion.span
+              variants={{ hover: { x: 3, y: -3 } }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <MdArrowOutward size={18} />
+            </motion.span>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
