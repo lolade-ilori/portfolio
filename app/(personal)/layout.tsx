@@ -10,7 +10,7 @@ import {
 import Sidebar from "./Sidebar";
 
 export const metadata: Metadata = {
-  title: "About Lolade",
+  title: "Lolade Ilori | Software Engineer",
   description: "A portfolio for Lolade Ilori",
 };
 

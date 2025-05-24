@@ -9,7 +9,7 @@ import {
 } from "../../utils/fonts";
 
 export const metadata: Metadata = {
-  title: "Lolade's World",
+  title: "Lolade Ilori | Software Engineer",
   description: "A portfolio for Lolade Ilori",
 };
 
