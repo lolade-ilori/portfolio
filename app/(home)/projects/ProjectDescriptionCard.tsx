@@ -21,7 +21,7 @@ const ProjectDescriptionCard = ({
         <Image
           src={gamey}
           alt="gamey"
-          className="h-30 md:h-20 rounded-2xl w-40 border border-green-200 object-cover object-center md:object-cover "
+          className="h-30 md:h-20 rounded-2xl w-40 border border-green-200 object-cover object-center md:object-cover"
         />
       </div>
 
@@ -57,7 +57,7 @@ const ProjectDescriptionCard = ({
             href={weblink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-1 items-center text-[#7C8A9C] text-sm font-faro-local underline underline-offset-2 uppercase transition duration-300 ease-in-out hover:text-[#0069FB]"
+            className="flex gap-1 items-center  text-sm font-faro-local underline underline-offset-2 uppercase transition duration-300 ease-in-out hover:text-[#0069FB]"
           >
             {description === "github" ? "github" : "visit website"}
             <motion.span
