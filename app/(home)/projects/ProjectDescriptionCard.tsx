@@ -21,7 +21,7 @@ const ProjectDescriptionCard = ({
         <Image
           src={gamey}
           alt="gamey"
-          className="h-30 md:h-20 rounded-2xl w-40 border border-green-200 object-cover object-center md:object-cover"
+          className="h-30 md:h-20 rounded-2xl w-40 object-cover object-center md:object-cover"
         />
       </div>
 
