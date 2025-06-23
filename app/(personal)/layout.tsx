@@ -8,6 +8,7 @@ import {
   FaroSemiBold,
 } from "../../utils/fonts";
 import Sidebar from "./Sidebar";
+import ClientWrapper from "../ClientWrapper";
 
 export const metadata: Metadata = {
   title: "Lolade Ilori | Software Engineer",
@@ -24,8 +25,7 @@ export default function PersonalLayout({
       <body
         className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-cover bg-center bg-[url('./assets/img/Background.png')] bg-fixed bg-no-repeat bg-blend-overlay flex`}
       >
-        <Sidebar />
-        <main className="relative z-10 w-full">{children}</main>
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

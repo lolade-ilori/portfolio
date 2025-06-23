@@ -1,7 +1,7 @@
 "use client";
-import Pills from "../components/Pills";
+import Pills from "../../components/Pills";
 import Link from "next/link";
-import JobsCarousel from "../components/JobsCarousel";
+import JobsCarousel from "../../components/JobsCarousel";
 
 export default function Home() {
   return (

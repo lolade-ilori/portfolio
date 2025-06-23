@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
-import AboutHeader from "../AboutHeader";
+import AboutHeader from "./AboutHeader";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import ExtraInfoBox from "../ExtraInfoBox";
+import ExtraInfoBox from "./ExtraInfoBox";
 import Image from "next/image";
-import copyright from "../../assets/img/ic_sharp-copyright.png";
+import copyright from "../assets/img/ic_sharp-copyright.png";
 
 const AboutPage = () => {
   const pathname = usePathname();
-
   return (
     <div className=" h-screen px-5 py-2 md:ml-60 md:py-8 md:px-16">
       <AboutHeader pathname={pathname} />

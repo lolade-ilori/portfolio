@@ -4,9 +4,11 @@ import SplashScreen from "./components/SplashScreen";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { usePathname } from "next/navigation";
+import Sidebar from "./(personal)/Sidebar";
 
 export default function ClientWrapper({ children }: { children: ReactNode }) {
   const pathname = usePathname();
+  console.log(pathname, "kfkf");
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
@@ -26,9 +28,11 @@ export default function ClientWrapper({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <NavBar pathname={pathname} />
-      <main className="min-h-[calc(100vh_-_130px)]">{children}</main>
-      <Footer />
+      {/* <NavBar pathname={pathname} /> */}
+      {/* <main className="min-h-[calc(100vh_-_130px)]">{children}</main> */}
+      {pathname !== "/projects" && <Sidebar />}
+      <main className="relative z-10 w-full">{children}</main>
+      {/* <Footer /> */}
     </>
   );
 }
