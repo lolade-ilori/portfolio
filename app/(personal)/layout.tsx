@@ -23,7 +23,7 @@ export default function PersonalLayout({
   return (
     <html lang="en">
       <body
-        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-cover bg-center bg-[url('./assets/img/Background.png')] bg-fixed bg-no-repeat bg-blend-overlay flex`}
+        className={` ${FaroRegular.variable} ${FaroBold.variable} ${FaroLight.variable} ${FaroSemiBold.variable} min-h-screen relative antialiased bg-cover bg-center flex`}
       >
         <ClientWrapper>{children}</ClientWrapper>
       </body>

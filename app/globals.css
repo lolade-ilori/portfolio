@@ -45,7 +45,7 @@
   --radius-xl: calc(var(--radius) + 4px)}
 
 body {
-  /* background-color: rgb(16, 16, 18); */
+  background-color: rgb(16, 16, 18);
   color: var(--foreground);
   padding: 0;
   margin: 0;
