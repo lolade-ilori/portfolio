@@ -9,14 +9,14 @@ import sidebar2 from "../assets/img/sidebar2.png";
 
 const Sidebar = () => {
   return (
-    <nav className="hidden md:block fixed z-11 left-0 top-0 min-h-screen w-60">
+    <nav className="hidden md:block fixed z-11 left-0 top-0 min-h-screen w-60 bg-black/45">
       <div>
-        <Image
+        {/* <Image
           src={bg}
           alt="background"
           fill
           className="object-cover object-left"
-        />
+        /> */}
 
         <div className="fixed left-0 top-0 z-20 py-8 px-9 font-faro-local uppercase">
           <Link href={"/"} className="underline underline-offset-2">
