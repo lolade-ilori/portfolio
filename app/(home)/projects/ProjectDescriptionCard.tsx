@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import gamey from "../../assets/img/gamey.jpeg";
+import soripod from "../../assets/img/Storipod.png";
 import Image from "next/image";
 import { ProjectsInfo } from "../../../data/projectHistory";
 import { MdArrowOutward } from "react-icons/md";
@@ -19,7 +20,7 @@ const ProjectDescriptionCard = ({
     <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-8 lg:gap-0 items-center">
       <div className="md:col-span-2">
         <Image
-          src={gamey}
+          src={image || gamey}
           alt="gamey"
           className="h-30 md:h-20 rounded-2xl w-40 object-cover object-center md:object-cover"
         />

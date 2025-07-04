@@ -1,8 +1,12 @@
 
+import storipod from "../app/assets/img/Storipod.png"
+
+import { StaticImageData } from "next/image"
+
 export interface ProjectsInfo {
     id: number,
     name: string,
-    image: string,
+    image: string | StaticImageData,
     weblink: string,
     description: string,
     stackUsed: string[],
@@ -13,7 +17,7 @@ export const projects: ProjectsInfo[] = [
     {
         id: 1,
         name: 'Storipod',
-        image: '',
+        image: storipod,
         weblink: 'https://web.storipod.app/auth',
         description: '',
         stackUsed: ['Vue', 'Nuxt', 'Tailwind', 'Typescript', 'Firebase', 'Docker' ],
