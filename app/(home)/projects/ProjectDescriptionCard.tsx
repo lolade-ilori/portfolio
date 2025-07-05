@@ -21,7 +21,7 @@ const ProjectDescriptionCard = ({
       <div className="md:col-span-2">
         <Image
           src={image || gamey}
-          alt="gamey"
+          alt={description}
           className="h-30 md:h-20 rounded-2xl w-40 object-cover object-center md:object-cover"
         />
       </div>
