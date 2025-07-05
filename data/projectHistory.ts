@@ -11,6 +11,7 @@ import movie from "../app/assets/img/movieD.png"
 import githubFinder from "../app/assets/img/githubFinder.png"
 import productivityDash from "../app/assets/img/productivityDash.png"
 import furniture from "../app/assets/img/furniture.png"
+import crimeapp from "../app/assets/img/crimeapp.png"
 import { StaticImageData } from "next/image"
 
 export interface ProjectsInfo {
@@ -54,7 +55,7 @@ export const projects: ProjectsInfo[] = [
     {
         id: 4,
         name: 'Crime App',
-        image: '',
+        image: crimeapp,
         weblink: 'https://github.com/lolade-ilori/CrimeApp',
         description: 'github',
         stackUsed: ['Kotlin', 'Retrofit'],

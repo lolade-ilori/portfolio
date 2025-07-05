@@ -18,6 +18,15 @@ const ProjectDescriptionCard = ({
 }: ProjectsInfo) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-8 lg:gap-0 items-center">
+      {/* {description.includes("github") ? (
+        <div className="md:col-span-2">
+          <Image
+            src={image || gamey}
+            alt={description}
+            className="h-30 md:h-20 rounded-2xl w-40 object-contain  object-center "
+          />
+        </div>
+      ) : ( */}
       <div className="md:col-span-2">
         <Image
           src={image || gamey}
@@ -25,6 +34,7 @@ const ProjectDescriptionCard = ({
           className="h-30 md:h-20 rounded-2xl w-40 object-cover object-center md:object-cover"
         />
       </div>
+      {/* )} */}
 
       <div className="md:col-span-5 flex flex-col justify-between ">
         <div className="text-sm md:text-base">
