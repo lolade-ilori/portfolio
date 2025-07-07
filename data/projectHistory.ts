@@ -58,7 +58,7 @@ export const projects: ProjectsInfo[] = [
         image: crimeapp,
         weblink: 'https://github.com/lolade-ilori/CrimeApp',
         description: 'github',
-        stackUsed: ['Kotlin', 'Retrofit'],
+        stackUsed: ['Kotlin', 'Retrofit', 'Jetpack Compose', 'Android Studio'],
         year: '2024'
     },
     {
