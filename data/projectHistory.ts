@@ -35,22 +35,31 @@ export const projects: ProjectsInfo[] = [
         year: '2025'
     },
     {
-        id: 2,
-        name: 'Issue Tracker',
-        image: issueTracker,
-        weblink: 'https://new-issue-tracker-eight.vercel.app/',
-        description: 'Issue Tracker',
-        stackUsed: ['Next', 'Typescript', 'Prisma', 'Tailwind', 'Xata'],
-        year: '2024'
+        id: 10,
+        name: 'Movie Dashboard',
+        image: movie,
+        weblink: 'https://movie-dashboard-tan.vercel.app/',
+        description: 'movie board site',
+        stackUsed: ['React', 'Javascript', 'scss', 'Context API'],
+        year: '2022'
     },
     {
-        id: 3,
-        name: 'Vue Job Site',
-        image: vueJobs,
-        weblink: 'https://jobs-site-phi.vercel.app/',
-        description: 'Job site for Vue Developers',
-        stackUsed: ['Vue', 'Nuxt', 'Tailwind'],
-        year: '2025'
+        id: 7,
+        name: 'Periculum',
+        image: periculum,
+        weblink: 'https://www.periculum.io/',
+        description: 'periculum site',
+        stackUsed: ['Webflow', 'Javascript'],
+        year: '2023'
+    },
+    {
+        id: 8,
+        name: 'Roadlers',
+        image: roadlers,
+        weblink: 'https://roadlers.com/',
+        description: 'roadlers web app',
+        stackUsed: ['React', 'Typescript', 'Styled Components', 'Redux', 'Google API'],
+        year: '2023'
     },
     {
         id: 4,
@@ -80,24 +89,6 @@ export const projects: ProjectsInfo[] = [
         year: '2023'
     },
     {
-        id: 7,
-        name: 'Periculum',
-        image: periculum,
-        weblink: 'https://www.periculum.io/',
-        description: 'periculum site',
-        stackUsed: ['Webflow', 'Javascript'],
-        year: '2023'
-    },
-    {
-        id: 8,
-        name: 'Roadlers',
-        image: roadlers,
-        weblink: 'https://roadlers.com/',
-        description: 'roadlers web app',
-        stackUsed: ['React', 'Typescript', 'Styled Components', 'Redux', 'Google API'],
-        year: '2023'
-    },
-    {
         id: 9,
         name: 'Interax',
         image: interax,
@@ -107,13 +98,22 @@ export const projects: ProjectsInfo[] = [
         year: '2023'
     },
     {
-        id: 10,
-        name: 'Movie Dashboard',
-        image: movie,
-        weblink: 'https://movie-dashboard-tan.vercel.app/',
-        description: 'movie board site',
-        stackUsed: ['React', 'Javascript', 'scss', 'Context API'],
-        year: '2022'
+        id: 2,
+        name: 'Issue Tracker',
+        image: issueTracker,
+        weblink: 'https://new-issue-tracker-eight.vercel.app/',
+        description: 'Issue Tracker',
+        stackUsed: ['Next', 'Typescript', 'Prisma', 'Tailwind', 'Xata'],
+        year: '2024'
+    },
+    {
+        id: 3,
+        name: 'Vue Job Site',
+        image: vueJobs,
+        weblink: 'https://jobs-site-phi.vercel.app/',
+        description: 'Job site for Vue Developers',
+        stackUsed: ['Vue', 'Nuxt', 'Tailwind'],
+        year: '2025'
     },
     {
         id: 11,
