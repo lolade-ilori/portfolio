@@ -41,7 +41,7 @@ export const projects: ProjectsInfo[] = [
         weblink: 'https://movie-dashboard-tan.vercel.app/',
         description: 'movie board site',
         stackUsed: ['React', 'Javascript', 'scss', 'Context API'],
-        year: '2022'
+        year: ''
     },
     {
         id: 7,
@@ -50,7 +50,7 @@ export const projects: ProjectsInfo[] = [
         weblink: 'https://www.periculum.io/',
         description: 'periculum site',
         stackUsed: ['Webflow', 'Javascript'],
-        year: '2023'
+        year: ''
     },
     {
         id: 8,
